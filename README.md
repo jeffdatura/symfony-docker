@@ -63,7 +63,7 @@ mysql -u root -p symfony_docker
 //install in bash php
 composer require symfony/webpack-encore-bundle
 
-//encor install in root directory
+//encor install in app directory
 yarn install
 
 //encore in app directory
