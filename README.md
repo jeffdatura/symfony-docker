@@ -9,7 +9,7 @@ RUN mv /root/.symfony5/bin/symfony /usr/local/bin/symfony
 sudo chown -R $(whoami) .
 ```
 
-//dependancies
+//dependancies maybe not need all
 ```
 composer require --dev symfony/profiler-pack
 composer require symfony/maker-bundle --dev
