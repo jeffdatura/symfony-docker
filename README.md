@@ -51,6 +51,8 @@ DATABASE_URL="mysql://root:secret@database:3306/symfony_docker?serverVersion=8.0
 
 symfony console make:migration
 symfony console doctrine:migrations:migrate
+
+//fixtures if you want
 symfony console make:fixture
 symfony console doctrine:fixtures:load
 ```
