@@ -85,6 +85,9 @@ yarn add sass-loader@^13.0.0 sass --dev
 app.scss
 custom.scss
 
+//run in app
+yarn watch
+
 //bootstrap
 yarn add bootstrap --dev
 yarn add @popperjs/core
