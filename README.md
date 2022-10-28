@@ -68,4 +68,11 @@ yarn install
 
 //encore in app directory
 yarn watch
+//for bootstrap
+yarn add bootstrap --dev
+yarn add sass-loader@^13.0.0 sass --dev
+//change assets/app.js
+import './styles/global.scss';
+//change webpack.config.js
+.enableSassLoader()
 ```
