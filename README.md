@@ -42,7 +42,7 @@ docker-compose exec php /bin/bash
 //symfony
 ```
 symfony check:requirements
-symfony new .
+symfony new . --version="6.1.*" --webapp
 cp .env .env.local
 DATABASE_URL="mysql://root:secret@database:3306/symfony_docker?serverVersion=8.0"
 symfony console make:migration
