@@ -36,6 +36,8 @@ return function (array $context) {
 //run docker
 ```
 docker-compose up -d --build
+
+//enter in application
 docker-compose exec php /bin/bash
 ```
 
@@ -44,7 +46,9 @@ docker-compose exec php /bin/bash
 symfony check:requirements
 symfony new . --version="6.1.*" --webapp
 cp .env .env.local
+
 DATABASE_URL="mysql://root:secret@database:3306/symfony_docker?serverVersion=8.0"
+
 symfony console make:migration
 symfony console doctrine:migrations:migrate
 symfony console make:fixture
@@ -68,13 +72,16 @@ yarn install
 
 //encore in app directory
 yarn watch
+
 //for bootstrap
 yarn add bootstrap --dev
 yarn add sass-loader@^13.0.0 sass --dev
 
 //create
 global.scs
-//add in global.scs
+
+//add in global.scss
+
 // assets/styles/global.scss
 
 // customize some Bootstrap variables
@@ -85,8 +92,10 @@ $primary: darken(#428bca, 20%);
 
 //change assets/app.js
 import './styles/global.scss';
+
 //change webpack.config.js
 .enableSassLoader()
+
 //run in app
 yarn watch
 ```
