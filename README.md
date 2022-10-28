@@ -77,26 +77,45 @@ yarn watch
 
 //for bootstrap
 yarn add sass-loader@^13.0.0 sass --dev
-yarn add bootstrap --dev
-
-//create
-global.scs
-
-//add in global.scss
-
-// assets/styles/global.scss
-
-// customize some Bootstrap variables
-$primary: darken(#428bca, 20%);
-
-// the ~ allows you to reference things in node_modules
-@import "~bootstrap/scss/bootstrap";
-
-//change assets/app.js
-import './styles/global.scss';
 
 //change webpack.config.js
 .enableSassLoader()
+
+//change app.css to and create custom.scss
+app.scss
+custom.scss
+
+//bootstrap
+yarn add bootstrap --dev
+yarn add @popperjs/core
+
+//in app.scss
+
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+
+body {
+    background-color: lightgray;
+}
+
+//change assets/app.js
+
+/*
+ * Welcome to your app's main JavaScript file!
+ *
+ * We recommend including the built version of this JavaScript file
+ * (and its CSS file) in your base layout (base.html.twig).
+ */
+
+// any CSS you import will output into a single css file (app.css in this case)
+import './styles/app.scss';
+
+// You can specify which plugins you need
+import { Tooltip, Toast, Popover } from 'bootstrap';
+
+// start the Stimulus application
+import './bootstrap';
 
 //run in app
 yarn watch
