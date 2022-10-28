@@ -50,6 +50,7 @@ cp .env .env.local
 DATABASE_URL="mysql://root:secret@database:3306/symfony_docker?serverVersion=8.0"
 
 symfony console make:migration
+//re-run docker docker-compose down ::: docker-compose up -d --build
 symfony console doctrine:migrations:migrate
 
 //fixtures if you want
