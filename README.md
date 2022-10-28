@@ -76,8 +76,8 @@ yarn install
 yarn watch
 
 //for bootstrap
-yarn add bootstrap --dev
 yarn add sass-loader@^13.0.0 sass --dev
+yarn add bootstrap --dev
 
 //create
 global.scs
