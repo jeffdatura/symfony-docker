@@ -71,6 +71,18 @@ yarn watch
 //for bootstrap
 yarn add bootstrap --dev
 yarn add sass-loader@^13.0.0 sass --dev
+
+//create
+global.scs
+//add in global.scs
+// assets/styles/global.scss
+
+// customize some Bootstrap variables
+$primary: darken(#428bca, 20%);
+
+// the ~ allows you to reference things in node_modules
+@import "~bootstrap/scss/bootstrap";
+
 //change assets/app.js
 import './styles/global.scss';
 //change webpack.config.js
