@@ -33,13 +33,19 @@ docker-compose up -d --build
 ```
 docker-compose exec php /bin/bash
 ```
-//symfony create project
+//symfony cmd
 ```
 symfony check:requirements
+```
+//create project
+```
 symfony new . --version="6.1.*" --webapp
+```
+//.env.local
+```
 cp .env .env.local
 ```
-//mysql .env
+//mysql .env.local
 ```
 DATABASE_URL="mysql://root:secret@database:3306/symfony_docker?serverVersion=8.0"
 ```
