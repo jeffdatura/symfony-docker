@@ -76,51 +76,36 @@ yarn install
 //encore in app directory
 yarn watch
 
-//for bootstrap
+//Using Sass/LESS/Stylus
+
 yarn add sass-loader@^13.0.0 sass --dev
+
+// assets/app.js
+- import './styles/app.css';
++ import './styles/app.scss';
 
 //change webpack.config.js
 .enableSassLoader()
 
-//change app.css to and create custom.scss
-app.scss
+//create custom.scss for style code
 custom.scss
 
 //run in app
-yarn watch
+yarn encore dev --watch
 
 //bootstrap
 yarn add bootstrap --dev
 yarn add jquery @popperjs/core --dev
 
 //in app.scss
-
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
 
 
-body {
-    background-color: lightgray;
-}
-
 //change assets/app.js
-
-/*
- * Welcome to your app's main JavaScript file!
- *
- * We recommend including the built version of this JavaScript file
- * (and its CSS file) in your base layout (base.html.twig).
- */
-
-// any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.scss';
-
-// You can specify which plugins you need
-import { Tooltip, Toast, Popover } from 'bootstrap';
-
-// start the Stimulus application
 import './bootstrap';
 
-//run in app
-yarn watch
+//change styles
+yarn encore dev --watch
 ```
