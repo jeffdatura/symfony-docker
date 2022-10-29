@@ -62,46 +62,60 @@ mysql -u root -p symfony_docker
 > show tables;
 ```
 //encor
-```
+
 //install in bash php
+```
 composer require symfony/webpack-encore-bundle
-
+```
 //encor install in app directory
+```
 yarn install
-
+```
 //encore in app directory
+```
 yarn watch
-
+```
 //Using Sass/LESS/Stylus
-
+```
 yarn add sass-loader@^13.0.0 sass --dev
-
+```
 // assets/app.js
+```
 - import './styles/app.css';
 + import './styles/app.scss';
-
+```
 //change webpack.config.js
+```
 .enableSassLoader()
-
+```
 //create custom.scss for style code
+```
 custom.scss
-
-//run in app
+```
+//run in symfony-docker/app
+```
 yarn encore dev --watch
-
+```
 //bootstrap
+```
 yarn add bootstrap --dev
+```
+//jquery
+```
 yarn add jquery @popperjs/core --dev
+```
 
 //in app.scss
+```
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
-
-
+```
 //change assets/app.js
+```
 import './styles/app.scss';
 import './bootstrap';
-
+```
 //change styles
+```
 yarn encore dev --watch
 ```
