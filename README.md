@@ -8,16 +8,8 @@ RUN mv /root/.symfony5/bin/symfony /usr/local/bin/symfony
 ```
 sudo chown -R $(whoami) .
 ```
-
-//dependancies maybe not need all
-```
-composer require --dev symfony/profiler-pack
-composer require symfony/maker-bundle --dev
-composer req --dev maker ormfixtures fakerphp/faker
-composer req doctrine twig
-composer require form validator security-csrf annotations
-
 //index.php if profiler hide
+```
 <?php
 
 use App\Kernel;
@@ -36,35 +28,33 @@ return function (array $context) {
 //run docker
 ```
 docker-compose up -d --build
-
-//enter in application
+```
+//php
+```
 docker-compose exec php /bin/bash
 ```
-
-//symfony
+//symfony create project
 ```
 symfony check:requirements
 symfony new . --version="6.1.*" --webapp
 cp .env .env.local
-
-DATABASE_URL="mysql://root:secret@database:3306/symfony_docker?serverVersion=8.0"
-
-symfony console make:migration
-//re-run docker docker-compose down ::: docker-compose up -d --build
-symfony console doctrine:migrations:migrate
-
-//fixtures if you want
-symfony console make:fixture
-symfony console doctrine:fixtures:load
 ```
-
+//mysql .env
+```
+DATABASE_URL="mysql://root:secret@database:3306/symfony_docker?serverVersion=8.0"
+```
+//cmd for database
+```
+symfony console make:migration
+# re-run # docker docker-compose down # and # docker-compose up -d --build
+symfony console doctrine:migrations:migrate
+```
 //mysql
 ```
 docker-compose exec database /bin/bash
 mysql -u root -p symfony_docker
 > show tables;
 ```
-
 //encor
 ```
 //install in bash php
