@@ -91,7 +91,7 @@ yarn watch
 
 //bootstrap
 yarn add bootstrap --dev
-yarn add @popperjs/core
+yarn add jquery @popperjs/core --dev
 
 //in app.scss
 
