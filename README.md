@@ -4,7 +4,7 @@
 ```
 RUN mv /root/.symfony5/bin/symfony /usr/local/bin/symfony
 ```
-//root project
+//unlock writing directory
 ```
 sudo chown -R $(whoami) .
 ```
