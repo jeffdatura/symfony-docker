@@ -61,7 +61,7 @@ docker-compose exec database /bin/bash
 mysql -u root -p symfony_docker
 > show tables;
 ```
-//encor
+//encore
 
 //install in bash php
 ```
@@ -93,29 +93,6 @@ yarn add sass-loader@^13.0.0 sass --dev
 custom.scss
 ```
 //run in symfony-docker/app
-```
-yarn encore dev --watch
-```
-//bootstrap
-```
-yarn add bootstrap --dev
-```
-//jquery
-```
-yarn add jquery @popperjs/core --dev
-```
-
-//in app.scss
-```
-@import "custom";
-@import "~bootstrap/scss/bootstrap";
-```
-//change assets/app.js
-```
-import './styles/app.scss';
-import './bootstrap';
-```
-//change styles
 ```
 yarn encore dev --watch
 ```
