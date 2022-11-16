@@ -115,7 +115,7 @@ $primary: darken(#428bca, 20%);
 
 yarn encore dev --watch
 ```
-//Importation de JavaScript Bootstrap
+//Import JavaScript Bootstrap
 ```
 yarn add jquery @popperjs/core --dev
 
