@@ -92,6 +92,10 @@ yarn add sass-loader@^13.0.0 sass --dev
 ```
 custom.scss
 ```
+//import custom.scss in app.scss
+```
+@import 'custom.scss';
+```
 //run in symfony-docker/app
 ```
 yarn encore dev --watch
