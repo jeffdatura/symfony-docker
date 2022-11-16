@@ -100,3 +100,17 @@ custom.scss
 ```
 yarn encore dev --watch
 ```
+//bootstrap
+```
+yarn add bootstrap --dev
+
+//config
+// assets/styles/global.scss
+
+// customize some Bootstrap variables
+$primary: darken(#428bca, 20%);
+
+// the ~ allows you to reference things in node_modules
+@import "~bootstrap/scss/bootstrap";
+
+```
