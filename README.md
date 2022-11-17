@@ -105,7 +105,7 @@ yarn encore dev --watch
 yarn add bootstrap --dev
 
 //config
-// assets/styles/app.scss
+// assets/styles/other.scss
 
 // customize some Bootstrap variables
 $primary: darken(#428bca, 20%);
