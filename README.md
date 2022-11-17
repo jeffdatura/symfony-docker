@@ -104,14 +104,11 @@ yarn encore dev --watch
 ```
 yarn add bootstrap --dev
 
-//config
 // assets/styles/other.scss
+@import "~bootstrap/scss/bootstrap";
 
 // customize some Bootstrap variables
 $primary: darken(#428bca, 20%);
-
-// the ~ allows you to reference things in node_modules
-@import "~bootstrap/scss/bootstrap";
 
 yarn encore dev --watch
 ```
