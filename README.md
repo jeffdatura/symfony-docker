@@ -100,7 +100,7 @@ custom.scss
 ```
 yarn encore dev --watch
 ```
-//bootstrap
+//bootstrap in app directory
 ```
 yarn add bootstrap --dev
 
