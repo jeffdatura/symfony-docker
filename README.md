@@ -73,7 +73,7 @@ yarn install
 ```
 //encore in app directory
 ```
-yarn watch
+yarn encore dev --watch
 ```
 //Using Sass/LESS/Stylus
 ```
@@ -117,18 +117,11 @@ yarn encore dev --watch
 yarn add jquery @popperjs/core --dev
 
 // app.js
+import './styles/app.scss';
 
+//jquery
 const $ = require('jquery');
-// this "modifies" the jquery module: adding behavior to it
-// the bootstrap module doesn't export/return anything
-require('bootstrap');
 
-// or you can include specific pieces
-// require('bootstrap/js/dist/tooltip');
-// require('bootstrap/js/dist/popover');
-
-$(document).ready(function() {
-    $('[data-toggle="popover"]').popover();
-});
-
+// start the Stimulus application
+import './bootstrap';
 ```
