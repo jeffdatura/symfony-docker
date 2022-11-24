@@ -112,4 +112,7 @@ const $ = require('jquery');
 
 // start the Stimulus application
 import './bootstrap';
+
+//javascript
+import './controllers/hello_controller'
 ```
