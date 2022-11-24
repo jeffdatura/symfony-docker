@@ -88,23 +88,11 @@ yarn add sass-loader@^13.0.0 sass --dev
 ```
 .enableSassLoader()
 ```
-//create custom.scss for style code
-```
-custom.scss
-```
-//import custom.scss in app.scss
-```
-@import 'custom.scss';
-```
-//run in symfony-docker/app
-```
-yarn encore dev --watch
-```
 //bootstrap in app directory
 ```
 yarn add bootstrap --dev
 
-// assets/styles/other.scss
+// assets/styles/app.scss
 @import "~bootstrap/scss/bootstrap";
 
 // customize some Bootstrap variables
