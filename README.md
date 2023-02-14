@@ -39,7 +39,7 @@ symfony check:requirements
 ```
 //create project
 ```
-symfony new . --version="6.1.*" --webapp
+symfony new . --version="6.2.*" --webapp
 ```
 //.env.local
 ```
