@@ -92,7 +92,12 @@ yarn add sass-loader@^13.0.0 sass --dev
 ```
 yarn add bootstrap --dev
 
-// assets/styles/app.scss
+//for css
+//assets/styles/app.css
+@import "bootstrap";
+
+//for scss
+//assets/styles/app.scss
 @import "~bootstrap/scss/bootstrap";
 
 // customize some Bootstrap variables
