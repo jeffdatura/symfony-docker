@@ -32,6 +32,7 @@ docker-compose up -d --build
 //php
 ```
 docker-compose exec php /bin/bash
+//pour codesandbox
 docker exec -it <container_id> /bin/bash
 ```
 //symfony cmd
@@ -59,6 +60,7 @@ symfony console doctrine:migrations:migrate
 //mysql
 ```
 docker-compose exec database /bin/bash
+//pour codesandbox
 docker exec -it <container_id> /bin/bash
 mysql -u root -p symfony_docker
 > show tables;
