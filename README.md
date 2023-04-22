@@ -1,5 +1,20 @@
 # symfony-docker
 
+# codesandbox
+```
+docker ps
+
+docker exec -it <container_id> /bin/bash
+
+rebuild container docker
+
+ls -a
+
+cd .codesandbox
+
+docker compose up
+```
+
 //Dockerfile PHP
 ```
 RUN mv /root/.symfony5/bin/symfony /usr/local/bin/symfony
