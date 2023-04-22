@@ -12,7 +12,7 @@ ls -a
 
 cd .codesandbox
 
-docker compose up
+docker compose up -d --build
 ```
 
 //Dockerfile PHP
