@@ -6,7 +6,7 @@ docker ps
 
 docker exec -it <container_id> /bin/bash
 
-rebuild container docker
+//for rebuild container docker
 
 ls -a
 
