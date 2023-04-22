@@ -13,10 +13,6 @@ docker exec -it <container_id> /bin/bash
 //for rebuild container docker
 
 ls -a
-
-cd .codesandbox
-
-docker compose up -d --build
 ```
 
 //Dockerfile PHP
