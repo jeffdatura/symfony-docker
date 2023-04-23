@@ -2,7 +2,8 @@
 
 # codesandbox
 ```
-docker-compose.yml => image: mysql:5.7
+//change docker-compose.yml for this :
+image: mysql:5.7
 
 //in workspace terminal for added extensions php
 apt install php8.1-{bcmath,xml,fpm,mysql,zip,intl,ldap,gd,cli,bz2,curl,mbstring,pgsql,opcache,soap,cgi}
