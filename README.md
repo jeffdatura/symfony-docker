@@ -8,6 +8,7 @@ image: mysql:5.7
 //in workspace terminal for added extensions php
 apt install php8.1-{bcmath,xml,fpm,mysql,zip,intl,ldap,gd,cli,bz2,curl,mbstring,pgsql,opcache,soap,cgi}
 
+//for codesandbox only change 127.0.0.1 by database
 DATABASE_URL="mysql://root:secret@database:3306/symfony_docker?serverVersion=5.7"
 
 not need database create because added with docker-compose.yml
