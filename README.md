@@ -4,6 +4,7 @@
 ```
 docker-compose.yml => image: mysql:5.7
 
+//in workspace terminal for added extensions php
 apt install php8.1-{bcmath,xml,fpm,mysql,zip,intl,ldap,gd,cli,bz2,curl,mbstring,pgsql,opcache,soap,cgi}
 
 DATABASE_URL="mysql://root:secret@database:3306/symfony_docker?serverVersion=5.7"
