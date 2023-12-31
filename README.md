@@ -77,6 +77,10 @@ symfony console make:migration
 # re-run # docker docker-compose down # and # docker-compose up -d --build
 symfony console doctrine:migrations:migrate
 ```
+//phpmyadmin
+```
+user => root password => secret
+```
 //mysql
 ```
 docker-compose exec database /bin/bash
