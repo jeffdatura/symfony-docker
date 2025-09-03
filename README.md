@@ -27,6 +27,7 @@ RUN mv /root/.symfony5/bin/symfony /usr/local/bin/symfony
 //unlock writing directory
 ```
 sudo chown -R $(whoami) .
+sudo chmod 666 /var/run/docker.sock
 ```
 //index.php if profiler hide
 ```
